@@ -1,0 +1,244 @@
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: black;
+    clear: left;
+	background:url(Free-Grunge-Watercolor-Stock-Background-Images.jpg);
+    text-align: center;
+}
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: Orange;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	font-family:sans-serif;
+	font-weight: bold;
+	}
+
+li a:hover:not(.active) {
+    background-color: #999;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+h1 {
+    border: 1px solid blue;
+    outline: 5px dotted orange;
+}
+h4.sansserif {
+    font-family:sans-serif;
+}
+h4 {
+    color: Orange;
+}
+h5.sansserif {
+    font-family:sans-serif;
+}
+mark { 
+    background-color: yellow;
+    color: black;
+}
+body {
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #444;
+}
+
+.post-body {
+    
+    max-width: 600px;
+    height: 100px;
+    margin: 20px auto;
+	border: 5px solid #f0f0f0;
+    padding: 15px 20px;
+    background-color: #ffc551;
+    color: #444;
+}
+.social-wrap { 
+margin:0 auto; 
+padding:0px; 
+text-decoration: none; 
+
+}
+.social-wrap ul li { 
+list-style-type: none; 
+border-bottom:none; 
+margin:0 auto; 
+background: none; 
+padding:0px; 
+line-height: 0!important;
+  
+}
+.social-wrap li a { 
+margin:5px 3px 0px 0px !important; 
+padding:0px; 
+width:50px; 
+height:50px; 
+text-indent:-99999px;
+float:left; 
+
+} 
+
+.social-wrap li a.facebook1 { 
+background: #314d91 url(https://2.bp.blogspot.com/-heI32-HhzMI/Vpw6xNHQlZI/AAAAAAAAAUw/fgnVjROHRRs/s1600/social-icons.png) no-repeat 0px 0px; 
+-webkit-transition:All 0.3s ease-out; 
+-moz-transition:All 0.3s ease-out; 
+-o-transition:All 0.3s ease-out; 
+} 
+.social-wrap li a.facebook1:hover { 
+background: #314d91 url(https://2.bp.blogspot.com/-heI32-HhzMI/Vpw6xNHQlZI/AAAAAAAAAUw/fgnVjROHRRs/s1600/social-icons.png) no-repeat 0px -73px; 
+} 
+.social-wrap li a.twitter1 { 
+background: #07beed url(https://2.bp.blogspot.com/-heI32-HhzMI/Vpw6xNHQlZI/AAAAAAAAAUw/fgnVjROHRRs/s1600/social-icons.png) no-repeat 0px -127px; 
+-webkit-transition:All 0.3s ease-out; 
+-moz-transition:All 0.3s ease-out; 
+-o-transition:All 0.3s ease-out; 
+} 
+.social-wrap li a.twitter1:hover { 
+background: #07beed url(https://2.bp.blogspot.com/-heI32-HhzMI/Vpw6xNHQlZI/AAAAAAAAAUw/fgnVjROHRRs/s1600/social-icons.png) no-repeat 0px -204px; 
+} 
+.social-wrap li a.google-p1 { 
+background:#a7291b url(https://2.bp.blogspot.com/-heI32-HhzMI/Vpw6xNHQlZI/AAAAAAAAAUw/fgnVjROHRRs/s1600/social-icons.png) no-repeat 0px -254px; 
+-webkit-transition:All 0.3s ease-out; 
+-moz-transition:All 0.3s ease-out; 
+-o-transition:All 0.3s ease-out; 
+} 
+.social-wrap li a.google-p1:hover { 
+background: #a7291b url(https://2.bp.blogspot.com/-heI32-HhzMI/Vpw6xNHQlZI/AAAAAAAAAUw/fgnVjROHRRs/s1600/social-icons.png) no-repeat 0px -330px; 
+} 
+.social-wrap li a.rss1 { 
+background:#ffaa31 url(https://2.bp.blogspot.com/-heI32-HhzMI/Vpw6xNHQlZI/AAAAAAAAAUw/fgnVjROHRRs/s1600/social-icons.png) no-repeat 0px -381px; 
+-webkit-transition:All 0.3s ease-out; 
+-moz-transition:All 0.3s ease-out; 
+-o-transition:All 0.3s ease-out; 
+} 
+.social-wrap li a.rss1:hover { 
+background: #ffaa31 url(https://2.bp.blogspot.com/-heI32-HhzMI/Vpw6xNHQlZI/AAAAAAAAAUw/fgnVjROHRRs/s1600/social-icons.png) no-repeat 0px -454px; 
+}
+.social-wrap li a.pinit1 { 
+background:#cb2027 url(https://2.bp.blogspot.com/-heI32-HhzMI/Vpw6xNHQlZI/AAAAAAAAAUw/fgnVjROHRRs/s1600/social-icons.png) no-repeat 0px -508px; 
+-webkit-transition:All 0.3s ease-out; 
+-moz-transition:All 0.3s ease-out; 
+-o-transition:All 0.3s ease-out; 
+} 
+.social-wrap li a.pinit1:hover { 
+background: #cb2027 url(https://2.bp.blogspot.com/-heI32-HhzMI/Vpw6xNHQlZI/AAAAAAAAAUw/fgnVjROHRRs/s1600/social-icons.png) no-repeat 0px -580px; 
+}
+.social-wrap li a.linkdin1 { 
+background:#1698E3 url(https://2.bp.blogspot.com/-heI32-HhzMI/Vpw6xNHQlZI/AAAAAAAAAUw/fgnVjROHRRs/s1600/social-icons.png) no-repeat 0px -635px; 
+-webkit-transition:All 0.3s ease-out; 
+-moz-transition:All 0.3s ease-out; 
+-o-transition:All 0.3s ease-out; 
+} 
+.social-wrap li a.linkdin1:hover { 
+background: #1698e3 url(https://2.bp.blogspot.com/-heI32-HhzMI/Vpw6xNHQlZI/AAAAAAAAAUw/fgnVjROHRRs/s1600/social-icons.png) no-repeat 0px -711px; 
+}
+   .credit{
+  text-align:center;
+
+ 
+} 
+.blog-link{
+color:#fff;
+text-decoration:none;
+background:#eee;
+background-size:40px;
+line-height:50px;
+display:inline-block;
+padding:0 10px;
+border-radius:4px;
+border-bottom:3px solid #ddd;
+color:#333;
+font-family:'open sans',sans-serif;
+margin:10px;
+}
+img {
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 10px;
+}
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}

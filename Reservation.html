@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BlueSky Airline</title>
+<link rel="icon" type="image/png" href="dreamparkwhite.png">
+<link rel="stylesheet" type="text/css" href="CSS/signup.css">
+<link rel="stylesheet" type="text/css" href="CSS/w3.css">
+
+
+<script type ="text/javascript">
+function validation()
+{
+	
+	var fname=document.registration.Name;
+	var email=document.registration.Email;
+	
+	if(Emptytyfield(Name,Email))
+	{
+		if(allLetter(Name))
+				{
+					
+					if(email_validation(Email))
+					{
+						alert('successfully inserted');
+						return true;
+					}
+				}
+	}	
+
+	return false;
+	
+}
+
+function Emptytyfield(Name,Email)
+{
+	var lName=fName.value.length;
+	var lEmail=Email.value.length;
+	
+	if(lName==0||lEmail==0)
+	{
+		alert("fields should not be empty")
+		return false;
+		
+		}
+		else
+		{
+			return true;
+		}
+	
+}
+
+function allLetter(Name)
+{
+	var letters=/^[a-zA-Z]+$/;
+	if(Name.value.match(letters))
+	{
+		return true;
+	}
+	else
+	{
+		alert('user name must have Letter characters only');
+		Name.focus();
+		return false;
+	}
+}
+
+	
+	function Email_validation(Email)
+{
+	var numbers=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;      
+	if(Email.value.match(numbers))
+	{		
+		return true;
+	}
+	else
+	{
+			alert('email address must have email format example@gmail.com');
+		Email.focus();
+		return false;
+		}
+	}
+</script>
+</head>
+
+<body>
+
+
+</header> 
+<ul>
+  <li><a class="active" href="Index.html">FLIGHTS</a></li>
+  <li><a href="Hotels.html">HOTELS</a></li>
+  <li><a href="Vacations.html">VACATIONS</a></li>
+  <li><a href="Cruises.html"> SPECIAL OFFERS</a></li>
+  <li><a href="Cars.html">CARS</a></li>
+  <li><a href="Contact Us.html">CONTACT US</a></li>
+  <li><a href="Reservation.html">MEMBER REGISTATION</a></li>
+</ul>
+
+<br>
+<center>
+<div style="padding-bottom: 18px;font-size : 21px;">
+  <h1>Make Your Reservation Here</h1>
+  </center>
+</div>
+<br><br>
+
+<form style="border:1px solid #ccc">
+  <div class="container">
+<form name='registration' method="post" onsubmit="return validation();">
+  <label><b>Name</b></label>
+    <input type="text" placeholder="Enter Full Name" name="Name" required>
+
+    <label><b>Phone No</b></label>
+    <input type="text" placeholder="Enter phone No" name="Phone" required>
+    
+    <label for="type"><b>Gender</b></label>
+    <select id="type" name="Gender">
+      <option value="male"><b>Male</b></option>
+      <option value="female"><b>Female</b></option>
+      </select>
+    
+    <label><b>Date of Birth</b></label>
+    <input type="text" placeholder="Enter date of Birth" name="DOB" required>
+    
+    
+     <label><b>Address</b></label>
+    <input type="text" placeholder="Enter you address" name="Address" required>
+    
+      <label><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="Email" required>
+    
+     <label><b>UserName</b></label>
+    <input type="text" placeholder="Enter Username" name="Username" required>
+    
+      <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="Password" id="Password">
+    
+<input type="submit"  name="submit" value="Submit"/>
+ <input type="reset" name="reset" id="reset" value="Reset" />
+ </div>
+  </div>
+</form>
+
+
+<br><br><br><br><br>
+<footer class="w3-padding-32 w3-black w3-center w3-margin-top">
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Copy right BlueSky Ariline 2018<a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green"></a></p>
+</footer>
+
+
+</body>
+</html>
